@@ -1,0 +1,7 @@
+functions: [enum-uppercase]
+rules:
+  enum-uppercase:
+    message: "{{error}}"
+    given: "$.paths.*.parameters.*.schema.enum"
+    then:
+      function: "enum-uppercase"
